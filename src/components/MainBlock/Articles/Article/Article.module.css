@@ -1,0 +1,41 @@
+.article{
+    border-radius: 5px;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+}
+.link{
+    text-decoration: none;
+}
+.title{
+    margin: 3px;
+    color: #000000;
+}
+.desc{
+    margin: 5px;
+    color: #747b84;
+}
+.articleFooter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.articleFooter p{
+
+    margin-top: 5px;
+    margin: 0;
+    margin-right: 5px;
+    color: darkgrey;
+}
+.articleFooter button{
+    margin-bottom: 5px;
+}
+.article img{
+    width: 280px;
+    border-radius: 8px;
+}

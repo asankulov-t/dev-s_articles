@@ -1,0 +1,9 @@
+.title{
+    margin-top: 48px;
+    margin-bottom: 22px;
+}
+.topics{
+    display: flex;
+
+    flex-wrap: wrap;
+}

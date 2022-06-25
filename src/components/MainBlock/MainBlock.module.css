@@ -1,0 +1,23 @@
+.main{
+    padding: 22px 45px;
+}
+.main input{
+    position: absolute;
+    border: none;
+    background: rgba(47, 159, 248, 0.04);
+    border-radius: 4px;
+    padding: 14px;
+    width: 495px;
+}
+.main input::-webkit-input-placeholder{
+    color: rgba(7, 45, 75, 0.3);
+}
+.main i{
+    position: relative;
+    left: 490px;
+    top: 10px;
+    cursor: pointer;
+}
+.main i:hover{
+    color: #2F9FF8;
+}
