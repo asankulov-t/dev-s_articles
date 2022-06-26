@@ -4,14 +4,17 @@ import {API} from "../../Api/Api";
 
 
 let initial:initialArtType={
-    data:[]
+    data:[],
+    tag:'',
+    items:15
 }
 //actions
 
-export const getArticlesAction=(data:Array<ArticlesReducerTypes>)=>{
+export const getArticlesAction=(data:Array<ArticlesReducerTypes>,tag:string)=>{
     return{
         type:"GET_ARTICLES",
-        data:data
+        data:data,
+        tag
     }as const
 }
 export const ErrorAction=(message:string)=>{
@@ -24,8 +27,8 @@ export const ErrorAction=(message:string)=>{
 
 
 //thunks
-export const getArticlesThunk=(itemscount?:any)=>(dispatch:Dispatch)=>{
-            API.getArticles(itemscount).then((res)=>dispatch(getArticlesAction(res.data)))
+export const getArticlesThunk=(itemscount?:any,tag:string='')=>(dispatch:Dispatch)=>{
+            API.getArticles(itemscount,tag).then((res)=>dispatch(getArticlesAction(res.data,tag)))
 
 
 }
@@ -38,7 +41,9 @@ type actionTypes=GetArticle|ErrorArticle
 export const ArticlesReducer=(state=initial,action:actionTypes)=>{
     switch (action.type) {
         case "GET_ARTICLES":
-            return {...state, data: action.data}
+            return {...state,
+                    data: action.data,
+                    tag:action.tag}
         default:return state
     }
 }

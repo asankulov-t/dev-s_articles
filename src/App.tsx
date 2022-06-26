@@ -6,7 +6,7 @@ import MainBlock from "./components/MainBlock/MainBlock";
 function App() {
     return (
         <div className="App">
-          <NavSide/>
+          {/*//<NavSide/>*/}
           <MainBlock/>
         </div>
     );

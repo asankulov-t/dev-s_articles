@@ -36,7 +36,9 @@ export type ArticlesReducerTypes={
     user: UserType;
 }
 export type initialArtType={
-    data:Array<ArticlesReducerTypes>
+    data:Array<ArticlesReducerTypes>,
+    tag:string,
+    items:number
 }
 
 

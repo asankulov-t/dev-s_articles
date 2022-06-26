@@ -1,11 +1,8 @@
 import React from 'react';
 import style from './Article.module.css'
-import {ReadType, UserType} from "../../../../types/types";
+import { UserType} from "../../../../types/types";
 import Btnv1 from "../../../../common/Btnv1";
-import {useDispatch, useSelector} from "react-redux";
-import {AppRootType} from "../../../../store/store";
 import {Link, NavLink} from "react-router-dom";
-import {getCurrentArticleThunk} from "../../../../store/reducers/ReadReducer";
 
 type ArticleTypes={
     id:number,

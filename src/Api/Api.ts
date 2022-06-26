@@ -10,10 +10,10 @@ const instance = axios.create({
 });
 //'?tag=redux&&top=50'
 export const API = {
-    getArticles(per_page:number=15,tag:string='') {
-        return instance.get<Array<ArticlesReducerTypes>>(`?per_page=${per_page}&tag=${tag}&top=10`)
+    getArticles(per_page:number,tag:string='') {
+        return instance.get<Array<ArticlesReducerTypes>>(`?per_page=${per_page}&tag=${tag}`)
     },
-    searchResult(){
+    resultOfSearch(per_page:number,title:string=''){
         return instance.get<Array<ArticlesReducerTypes>>('/')
     },
     getCurrentArticle(id:string){

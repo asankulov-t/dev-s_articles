@@ -10,8 +10,8 @@ const MainBlock = () => {
     let history=useLocation()
     return (
         <div className={style.main}>
-            <input placeholder='search' type="text"/>
-            <i className="bi bi-search"></i>
+            {/*<input placeholder='search' type="text"/>*/}
+            {/*<i className="bi bi-search"></i>*/}
             <div>
                 <Topics/>
                 <Routes>
