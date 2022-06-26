@@ -13,3 +13,18 @@
     color: white;
     background-color: #2F9FF8;
 }
+
+.secondBtn{
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    background-color: #0768B5;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.secondBtn:hover{
+    background-color: black;
+}

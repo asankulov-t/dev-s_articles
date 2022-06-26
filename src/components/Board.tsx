@@ -7,7 +7,7 @@ import {useLocation} from "react-router-dom";
 import {getCurrentArticleThunk} from "../store/reducers/ReadReducer";
 
 
-const Template = () => {
+const Board = () => {
     let history=useLocation()
     let dispatch=useDispatch()
     useEffect(()=>{
@@ -29,9 +29,9 @@ const Template = () => {
                 url={data.url} user={data.user}
                 published={data.published_at}
                 body_html={data.body_html}
-                body_markdown={data.body_markdown}/>:<p>Error</p>}
+                />:<p>Error</p>}
         </div>
     );
 };
 
-export default Template;
+export default Board;

@@ -8,9 +8,12 @@ const instance = axios.create({
     //     'api-key':'mYM7roJxuDBmWfv56Cs9o2N8',
     // }
 });
-
+//'?tag=redux&&top=50'
 export const API = {
-    getArticles() {
+    getArticles(per_page:number=15,tag:string='') {
+        return instance.get<Array<ArticlesReducerTypes>>(`?per_page=${per_page}&tag=${tag}&top=10`)
+    },
+    searchResult(){
         return instance.get<Array<ArticlesReducerTypes>>('/')
     },
     getCurrentArticle(id:string){

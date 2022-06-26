@@ -22,15 +22,11 @@ export const ErrorAction=(message:string)=>{
 }
 
 
+
 //thunks
-export const getArticlesThunk=()=>(dispatch:Dispatch<actionTypes>)=>{
-        try {
-            API.getArticles().then((res)=>dispatch(getArticlesAction(res.data)))
-        }
-        catch (e) {
-            // @ts-ignore
-            dispatch(ErrorAction(e.message))
-        }
+export const getArticlesThunk=(itemscount?:any)=>(dispatch:Dispatch)=>{
+            API.getArticles(itemscount).then((res)=>dispatch(getArticlesAction(res.data)))
+
 
 }
 
