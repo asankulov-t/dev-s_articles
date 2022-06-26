@@ -24,7 +24,7 @@ const ReadArticle = (props: ReadArticleType) => {
         <div className={style.article}>
 
             <h3>{props.title}</h3>
-            <img src={props.img} alt=""/>
+            <img className={style.mainImg} src={props.img} alt=""/>
             <p>{props.desc}</p>
             <div className={style.inHtml} dangerouslySetInnerHTML={{__html: props.body_html}}/>
             <p>{props.published}</p>

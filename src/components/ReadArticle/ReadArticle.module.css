@@ -6,6 +6,9 @@
     box-shadow: 0 0 12px rgba(0,0,0,0.4); /* Параметры тени */
 
 }
+.mainImg{
+    width: 100%;
+}
 .article img{
     border-radius: 10px;
 
@@ -23,9 +26,7 @@
     color: black;
     background-color: #dedede;
 }
-.inHtml img{
 
-}
 .article pre{
     border-radius: 5px;
     padding: 3px;

@@ -15,7 +15,7 @@ const MainBlock = () => {
             <div>
                 <Topics/>
                 <Routes>
-                    <Route path={'/'} element={<Articles/>}/>
+                    <Route path={'/dev-s_articles"'} element={<Articles/>}/>
                     <Route path={history.pathname} element={<Board/>}/>
                 </Routes>
 
